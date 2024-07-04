@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  background-image: url(background/groovy.jpeg);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #ff9e98;
+}
+
+.container {
+  background: #fff3cc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 1px rgba(7, 134, 160, 0.1);
+  width: 90%;
+  max-width: 500px;
+  border: 3px dotted #64cedc;
+  margin: auto; 
+  position: relative;
+}
+
+h1 {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ddbcf4;
+  -webkit-text-stroke: 0.5px #ab75d2;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+}
+
+#task-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #97eaea;
+  border-radius: 5px;
+}
+
+#add-button {
+  flex-shrink: 0;
+  background-color: #64cedc; /* Blue background color */
+  color: white; /* White text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#add-button:hover {
+  background-color: #94dae0; /* Light blue background color on hover */
+}
+
+
+.task-area {
+  margin-top: 20px;
+}
+
+.task-tabs {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid #eee;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.task-tabs div {
+  padding: 2px 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.task-tabs .active {
+  color: #ff9e98;
+}
+
+#under-line {
+  height: 2px;
+  background-color: #ff9e98;
+  position: absolute;
+  bottom: -1px;
+  left: 0px;
+  transition: left 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background: #f9f9f9;
+  transition: background 0.3s;
+}
+
+.task-done {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.task i {
+  margin-left: 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.task i:hover {
+  color: rgb(172, 93, 93);
+  background: #f1f1f1;
+}
+
+.task i.completed {
+  color: rgb(230, 202, 202);
+}
